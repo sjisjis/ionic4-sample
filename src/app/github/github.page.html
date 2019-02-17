@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>github</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      <ion-avatar item-start>
+        <ion-img [src]="user.avatar_url"></ion-img>
+      </ion-avatar>
+      {{ user.id }} {{ user.login }}
+    </ion-item>
+  </ion-list>
+</ion-content>

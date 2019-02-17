@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'github', loadChildren: './github/github.module#GithubPageModule' }
 ];
 
 @NgModule({
